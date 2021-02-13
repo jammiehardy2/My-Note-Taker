@@ -1,12 +1,13 @@
-var path = require('path');
+var path = require("path");
+const router = require("express").Router();
 
-module.exports = function(app) {
-
-app.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname + 'index.html'))
-
+router.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname + "../public/index.html"));
+  res.json(notes);
 });
-app.get('/note', function (req,res){
-    res.sendFile(path.join(__dirname + 'notes.html'))
+
+router.get("/notes", function (req, res) {
+  res.sendFile(path.join(__dirname + "../public/notes.html"));
 });
-}
+
+module.exports = router;
