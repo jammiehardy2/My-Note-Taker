@@ -15,11 +15,34 @@
     </a>
   </nav>
   <div class="container">
-    <div style="margin-top: 80px;" class="jumbotron text-center">
+    <div style="margin-top: 60px;" class="jumbotron text-center">
       <h1 class="display-4">Note Taker <span role="img" aria-label="Memo">📝</span></h1>
-      <h4 class="mt-4">Take notes with Express</h4>
-      <a class="btn btn-primary btn-lg mt-4" href="/notes" role="button">Get Started</a>
+      <h4 class="mt-6">Take notes with Express</h4>
+      <a class="btn btn-primary btn-lg mt-4" href="./notes.html" role="button">Get Started</a>
     </div>
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">
+              New Note
+            </h5>
+            <form>
+              <div class="form-group">
+                <label for="name">Title</label>
+                <input type="text" class="form-control" id="title">
+              </div>
+              <div class="form-group">
+                <label for="cause">Body</label>
+                <input type="text" class="form-control" id="body">
+              </div>
+              <div class="form-group">
+              </div>
+              <button id="newNote-Enter" type="Enter" class="btn btn-primary mt-6">Enter</button>
+              <button id="newNote-delete" type="delete" class="btn btn-danger mt-6">Delete</button>
+            </form>
+          </div>
+        </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
